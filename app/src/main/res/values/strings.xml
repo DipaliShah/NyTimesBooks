@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NyTimes Books</string>
+    <string name="label_read_now">Read Now</string>
+</resources>

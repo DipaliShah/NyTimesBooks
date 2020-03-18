@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivBookCover"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedCornerImageView" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="72dp"
+        app:fontFamily="@font/amiko"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBookCover"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Book Name"
+        style="@style/styleTextHeader" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        app:fontFamily="@font/amiko"
+        app:layout_constraintEnd_toEndOf="@+id/tvHeader"
+        app:layout_constraintStart_toStartOf="@+id/tvHeader"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+        tools:text="Author Name"
+        style="@style/styleTextBody" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:isIndicator="true"
+        app:layout_constraintEnd_toEndOf="@+id/tvSubTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvSubTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubTitle" />
+
+    <Button
+        android:id="@+id/btnBookDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSubTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvSubTitle"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+       android:text="@string/label_read_now" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

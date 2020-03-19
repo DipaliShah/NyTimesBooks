@@ -12,14 +12,6 @@ import java.util.concurrent.TimeUnit
 object WsUtil {
     private var booksService: BooksService? = null
 
- /*   val webService by lazy {
-        Retrofit.Builder()
-            .baseUrl(BuildConfig.SERVER_URL)
-            *//*.callFactory()*//*
-            .build()
-            .create(BooksService::class.java)
-    }*/
-
     /**
      * Static method to to get api client instance
      *
